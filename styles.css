@@ -1,0 +1,83 @@
+*{padding:0;margin:0;border:0;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+a,a:visited,a:hover {text-decoration: none;}
+ul li {list-style: none;}
+/*--------------------*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #c3e57e;
+}
+
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1440px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+
+.navbar__row {
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	background-color: #FFF;
+}
+.navbar__column {
+	padding: 24px 48px;
+}
+
+.first__block {
+  padding: 50px 0;
+	background-color: #FFF;  
+}
+
+.first__block__row {
+  display: flex;
+	justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* родитель */
+.footer{
+	background-color: #fff;
+
+}
+
+/* flex-контейнер */
+.footer__row{
+	display: flex;
+	height: 65px;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+/* flex-элемент */
+.footer__column{
+	padding: 24px 48px;
+}
+
+/* контент */
+.footer__content{
+/* плюс прочие стили для текста, отступы */
+}
