@@ -1,6 +1,6 @@
 *{padding:0;margin:0;border:0;}
 html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-a,a:visited,a:hover {text-decoration: none;}
+a,a:visited,a:hover {text-decoration: none; color: #202020;}
 ul li {list-style: none;}
 /*--------------------*/
 
@@ -20,27 +20,23 @@ body {
 }
 
 
-.navbar__row {
+.nav__ul__row {
 	display: flex;
 	justify-content:space-between;
 	align-items: center;
 	background-color: #FFF;
 }
-.navbar__column {
+.nav__li__a {
 	padding: 24px 48px;
-}
-.navbar__item {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
 	color: #202020;
 }
 
-.first__block {
-	background-color: #FFF;  
-}
 
 .first__block__row {
+	background-color: #FFF; 
   display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -57,13 +53,13 @@ body {
 	padding: 0px 116px;
 	letter-spacing: 0em;
 }
-.first__text__title {
+.first__block__title{
 	font-size: 61px;
 	font-weight: 700;
 	line-height: 73px;
 	text-align: left;
 }
-.first__text__details {
+.first__block__subtitle {
 	font-size: 25px;
 	font-weight: 600;
 	line-height: 30px;
@@ -72,24 +68,28 @@ body {
 }
 
 
-.block_buttons {
+.block__buttons {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
-.button1, .button2{
+.button__1, .button__2{
 	width: 267px;
 	height: 77px;
 	border: 3px solid #202020;
 	border-radius: 8px;
-	background-color:	#000AFF;
-
+	background-color:	#FFF;
+	cursor: pointer;
 	font-size: 24px;
 	font-weight: 600;
 	line-height: 29px;
-	color: #FFF; 
+	color: #000;
+	transition-duration: 0.4s;
 }
-
+.button__1:hover, .button__2:hover {
+	background-color:	#000AFF;
+	color: #FFF; 	
+}
 
 .block__logo {
 	background-color: #EEEEEE;
@@ -100,7 +100,7 @@ body {
 	align-items: center;
 	gap: 48px;
 }
-.logo__row h5{
+.logo__h5 {
 	font-size: 25px;
 	font-style: normal;
 	font-weight: 600;
@@ -115,11 +115,19 @@ body {
 	gap: 104px;
 }
 
-.third__block, .five__block h2 {
+h2 {
 	font-size: 49px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 59px;
+}
+h4, a{
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 30px;
+		color: #5F5F5F;
+		text-align: left;
 }
 .third__block, .five__block {
 	background-color: #fff;
@@ -134,21 +142,13 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 }
-
 .third__block__column, .five__block__column{
 	display: flex;
-
 	flex-wrap: wrap;
 	width: 321px;
-
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 30px;
-	color: #5F5F5F;
-	text-align: left;
 }
-.block__four {
+
+.four__block {
 	display: flex;
 	flex-direction: column;
 	background-color: #EEEEEE;
@@ -156,39 +156,24 @@ body {
 	padding: 132px 164px;
 	gap: 48px;
 }
-
-.block__four h2{
-	font-size: 49px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 59px;
-}
-.block__four__row {
+.four__block__row {
 	display: flex;
 	justify-content: space-between;
 }
-.block__four__leftcolumn h4{
+.four__block__steps{
 	font-size: 31px;
 	font-weight: 600;
 	line-height: 37px;
 	letter-spacing: 0em;
+	text-align: left;
+	color: #000;
 }
-
-.block__four__leftcolumn {
+.four__block__leftcolumn {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-
-	text-align: left;
 	width: 546px;
 	gap: 36px;
-	
-
-	font-size: 20px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 30px;
-	color: #202020;;
 }
 
 
@@ -196,12 +181,13 @@ body {
 	gap: 32px;
 }
 
+
 .comment {
 	display: flex;
 	flex-direction: row;
 	gap: 24px;
 }
-.comment img {
+.image__icon {
 	width: 85px;
 }
 .comment__details {
@@ -211,21 +197,18 @@ body {
 	color:#5F5F5F;
 	text-align: left;	
 	font-style: normal;
-
 }
-.comment__details h3{
+.comment__name{
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 30px;
 }
-
-.comment__details h4{
+.comment__job{
 	font-size: 13px;
 	font-weight: 700;
 	line-height: 16px;
 }
-
-.comment__details h5 {
+.comment__company{
 	font-size: 13px;
 	font-weight: 400;
 	line-height: 16px;
@@ -243,8 +226,9 @@ body {
 
 
 
-.footer{
+footer {
 	background-color: #fff;
+	padding: 24px 48px;
 }
 .footer__row{
 	display: flex;
@@ -252,10 +236,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
-.footer__column{
-	padding: 24px 48px;
-}
-.footer__item {
+.footer_support {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
