@@ -115,13 +115,13 @@ body {
 	gap: 104px;
 }
 
-.third__block h2 {
+.third__block, .five__block h2 {
 	font-size: 49px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 59px;
 }
-.third__block {
+.third__block, .five__block {
 	background-color: #fff;
 	display: flex;
 	flex-direction: column;
@@ -130,12 +130,12 @@ body {
 	text-align: center;
 }
 
-.third__block__row {
+.third__block__row, .five__block__row{
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.third__block__column {
+.third__block__column, .five__block__column{
 	display: flex;
 
 	flex-wrap: wrap;
@@ -190,6 +190,47 @@ body {
 	line-height: 30px;
 	color: #202020;;
 }
+
+
+.five__block__column {
+	gap: 32px;
+}
+
+.comment {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+}
+.comment img {
+	width: 85px;
+}
+.comment__details {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	color:#5F5F5F;
+	text-align: left;	
+	font-style: normal;
+
+}
+.comment__details h3{
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.comment__details h4{
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 16px;
+}
+
+.comment__details h5 {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
 
 
 
