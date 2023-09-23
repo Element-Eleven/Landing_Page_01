@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/images/fav-icon2.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Краткое описание страницы">
     <meta name="keywords" content="Ключевые слова страницы">
     <title>This is the title of the webpage!</title>
+    <link rel="icon" type="image/x-icon" href="/images/fav-icon2.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="/css/animate.min.css">
   </head>
-  <body>
+  <body>  
     <div class="wrapper">
 
         <nav>
@@ -29,13 +30,13 @@
                     <h1 class="first__block__title">Eget tempor cursus mi amet</h1>
                     <p class="first__block__subtitle">Eu facilisis facilisis facilisi ac ridiculus cras in uspendisse bibendum donec</p>
                     <div class="block__buttons"> 
-                      <button class="button__1">Turpis fermentum</button>
-                      <button class="button__2">Tortor sed</button>
+                      <button class="button__1 wow fadeInLeft ">Turpis fermentum</button>
+                      <button class="button__2 wow fadeInRight">Tortor sed</button>
                     </div> 
                   </div>
                 </div>
 
-                <div class="first__block__column">  
+                <div class="first__block__column wow fadeInRight" data-wow-iteration="10">  
                     <img src="images/Image.png" alt="image">
                 </div>
             </div>
@@ -44,17 +45,17 @@
         <div class="block__logo">
             <h5 class="logo__h5">As seen in</h5>
               <div class="logo__column">
-                <img src="images/01.png" alt="logo">
-                <img src="images/02.png" alt="logo">
-                <img src="images/03.png" alt="logo">
-                <img src="images/04.png" alt="logo">
-                <img src="images/05.png" alt="logo">
+                <img class="wow fadeInLeft" data-wow-duration="2s" src="images/01.png" alt="logo">
+                <img class="wow fadeInLeft" data-wow-duration="2s" src="images/02.png" alt="logo">
+                <img class="wow fadeInUp" data-wow-duration="2.5s" src="images/03.png" alt="logo">
+                <img class="wow fadeInRight" data-wow-duration="2s" src="images/04.png" alt="logo">
+                <img class="wow fadeInRight" data-wow-duration="2s" src="images/05.png" alt="logo">
               </div>
         </div>
 
         <div class="third__block">
           <h2>Is this you?</h2>
-          <div class="third__block__row">
+          <div class="third__block__row wow pulse">
             <div class="third__block__column">
               <h4>“Ultricies amet eget vulputate lobortis. Dui ut non urna tellus posuere vitae non tellus pulvinar.”</h4>
             </div>
@@ -71,7 +72,7 @@
           <h2>How it works</h2>
           <div class="four__block__row">
             <div class="four__block__column">
-              <div class="four__block__leftcolumn">
+              <div class="four__block__leftcolumn wow bounceInLeft">
                 <p class="four__block__steps">1. Step one</p>
                 <h4>Ultricies amet eget vulputate lobortis. Dui ut non urna tellus posuere vitae non tellus pulvinar.</h4>
                 <p class="four__block__steps">2. Step two</p>
@@ -80,7 +81,7 @@
                 <h4>Ultricies amet eget vulputate lobortis. Dui ut non urna tellus posuere vitae non tellus pulvinar.</h4>
               </div>
             </div>
-            <div class="four__block__column">
+            <div class="four__block__column wow flipInX">
               <img src="images/Portfolio Design Inspiration 1.png" alt="image">
             </div>
           </div>
@@ -88,12 +89,12 @@
 
 
         <div class="five__block">
-          <h2>Testimonials</h2>
-          <div class="five__block__row">
+          <h2 class="wow bounce">Testimonials</h2> 
+          <div class="five__block__row ">
             <div class="five__block__column">
               <h4>“Ultricies amet eget vulputate lobortis. Dui ut non urna tellus posuere vitae non tellus pulvinar.”</h4>
               <div class="comment">
-                <img class="image__icon" src="images/Headshot1.png" alt="image">
+                <img class="image__icon wow flip" src="images/Headshot1.png" alt="image">
                 <div class="comment__details">
                   <p class="comment__name">Peter Smith</p>
                   <p class="comment__job">Job role</p>
@@ -104,7 +105,7 @@
             <div class="five__block__column">
               <h4>“Ultricies amet eget vulputate lobortis. Dui ut non urna tellus posuere vitae non tellus pulvinar.”</h4>
               <div class="comment">
-                <img class="image__icon" src="images/Headshot2.png" alt="image">
+                <img class="image__icon wow flip" src="images/Headshot2.png" alt="image">
                 <div class="comment__details">
                   <p class="comment__name">Jane Doe</p>
                   <p class="comment__job">Job role</p>
@@ -115,7 +116,7 @@
             <div class="five__block__column">
               <h4>“Ultricies amet eget vulputate lobortis. Dui ut non urna tellus posuere vitae non tellus pulvinar.”</h4>
               <div class="comment">
-                <img class="image__icon" src="images/Headshot3.png" alt="image">
+                <img class="image__icon wow flip" src="images/Headshot3.png" alt="image">
                 <div class="comment__details">
                   <p class="comment__name">Peter Otoole</p>
                   <p class="comment__job">Job role</p>
@@ -326,7 +327,10 @@
             <p class="footer_support ">Support</p>
         </footer>
 
-        
+
     </div>
   </body>
+        <script src="js/wow.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/revealscroll.js"></script>
 </html>
